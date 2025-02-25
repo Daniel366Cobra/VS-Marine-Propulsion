@@ -39,6 +39,15 @@ allprojects {
     base.archivesName = archives_base_name
     group = maven_group
 
+    repositories {
+        mavenCentral()
+        maven { url "https://maven.architectury.dev/" }
+    }
+
+    ext {
+        architectury_version = "9.2.14" // Or the latest version
+    }
+
     // Formats the mod version to include the loader, Minecraft version, and build number (if present)
     // example: 1.0.0+fabric-1.18.2-build.100
     String buildNumber = System.getenv("GITHUB_RUN_NUMBER")

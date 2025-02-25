@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "vs_marinepropulsion",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "VS Marine Propulsion",
+  "description": "Exploring options for Valkyrien Skies watercraft propulsion.",
   "authors": [
-    "Me!"
+    "Daniel366Cobra"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Daniel366Cobra",
+    "sources": "https://github.com/Daniel366Cobra/VS-Marine-Propulsion"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "CC-BY-SA",
+  "icon": "assets/vs_marinepropulsion/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "dev.daniel366cobra.vs_marinepropulsion.fabric.VS_MarinePropulsionModFabric"
+    ],
+    "client": [
+      "dev.daniel366cobra.vs_marinepropulsion.fabric.client.VS_MarinePropulsionModFabricClient"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json",
-    "examplemod-common.mixins.json"
+    "vs_marinepropulsion.mixins.json"
   ],
   "depends": {
     "minecraft": "${minecraft_version}",

@@ -1,33 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[${forge_version},)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "CC BY-SA"
 
 [[mods]]
-modId = "examplemod"
+modId = "vs_marinepropulsion"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "VS Marine Propulsion"
+authors = "Daniel366Cobra"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+Exploring options for Valkyrien Skies watercraft propulsion.
 '''
 logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.vs_marinepropulsion]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.vs_marinepropulsion]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.vs_marinepropulsion]]
 modId="create"
 mandatory=true
 versionRange="${create_version}"
